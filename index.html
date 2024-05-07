@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Cost Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Ice Cream Cost Calculator</h1>
+        
+        <form id="iceCreamForm">
+            <div class="form-group">
+                <label for="numberOfScoops">Number of Scoops:</label>
+                <input type="number" class="form-control" id="numberOfScoops" min="1" value="1">
+            </div>
+            
+            <div class="form-group topping-group">
+                <label>Toppings:</label><br>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="sprinklesCheckbox">
+                    <label class="form-check-label" for="sprinklesCheckbox">Sprinkles ($0.50)</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="hotFudgeCheckbox">
+                    <label class="form-check-label" for="hotFudgeCheckbox">Hot Fudge ($1.25)</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="whippedCreamCheckbox">
+                    <label class="form-check-label" for="whippedCreamCheckbox">Whipped Cream ($0.25)</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="cherryCheckbox">
+                    <label class="form-check-label" for="cherryCheckbox">Cherry ($0.25)</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="nutsCheckbox">
+                    <label class="form-check-label" for="nutsCheckbox">Nuts ($0.25)</label>
+                </div>
+            </div>
+            
+            <button type="button" class="btn btn-primary btn-block submitbut" onclick="calculateCost()">Submit Order</button>
+        </form>
+
+        <div id="result" class="mt-4"></div>
+    </div>
+
+    <!-- Bootstrap JS (optional, if you need JS functionality) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/javacsript/script.js"></script>
+
+    
+</body>
+</html>
